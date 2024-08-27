@@ -1,2 +1,3 @@
-export * from './Header';
-export * from './Footer';
+export * from './header/Header';
+export * from './footer/Footer';
+export * from './svg-icons';

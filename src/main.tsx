@@ -6,13 +6,16 @@ import { Provider } from "react-redux";
 import { store } from "./redux/store.ts";
 import theme from "./styles/theme.ts";
 import { ThemeProvider } from "@mui/material";
+import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <ThemeProvider theme={theme}>
-    <Provider store={store}>
-      <App />
-    </Provider>
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <Provider store={store}>
+          <App />
+        </Provider>
+      </ThemeProvider>
+    </BrowserRouter>
   </StrictMode>
 );

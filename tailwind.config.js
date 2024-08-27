@@ -30,6 +30,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      
       colors: {
         dark: {
           100: colorWithOpacity("dark-100"),
