@@ -25,7 +25,7 @@ const SiteHeader = () => {
               </NavLink>
             ))}
           </nav>
-          <button className="size-36px rounded-full bg-primary-200 grid place-items-center">
+          <button className="size-36px rounded-full bg-primary-200 text-light-200 grid place-items-center">
             <SvgIcons type="search" />
           </button>
           <NavLink to="/" className="flex items-center gap-10px">
