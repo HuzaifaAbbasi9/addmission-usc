@@ -5,9 +5,9 @@ import SvgIcons from "../../svg-icons";
 const HeroHeader = () => {
   const [activeTab, setActiveTab] = useState(0);
   return (
-    <section className="min-h-792px py-55px bg-[url('/hero-header-bg.png')] bg-cover bg-no-repeat relative">
+    <section className="lg:min-h-792px max-lg:min-h-screen max-lg:flex max-lg:items-center py-55px bg-[url('/hero-header-bg.png')] bg-cover bg-no-repeat relative">
       <div className="custom-container relative">
-        <button className="text-base bg-primary-400 px-10px py-10px rounded-full absolute lg:right-39px max-lg:right-20px -top-6 h-38px flex items-center">
+        <button className="text-base bg-primary-400 px-10px py-10px rounded-full lg:absolute lg:right-39px lg:-top-6 h-38px flex items-center max-lg:mx-auto max-lg:mb-3">
           <span
             className="text-white font-bold"
             style={{ textShadow: "0px 4px 4px rgba(0, 0, 0, 0.5)" }}
@@ -19,15 +19,15 @@ const HeroHeader = () => {
           <h1 className="text-white lg:text-61px max-lg:text-40px lg:pr-20px text-center font-light">
             Connecting People to Education
           </h1>
-          <div className="bg-primary-300/40 rounded-38px overflow-hidden pt-23px px-15px pb-8px space-y-5">
-            <div className="flex flex-nowrap justify-between overflow-x-auto gap-4">
+          <div className="bg-primary-300/40 lg:rounded-38px max-lg:rounded-25px overflow-hidden pt-23px px-15px pb-8px lg:space-y-5 max-lg:space-y-2">
+            <div className="flex lg:flex-nowrap max-lg:flex-wrap lg:justify-between overflow-x-auto lg:gap-4 max-lg:gap-2">
               {textData.heroHeaderSearchTabs.map((text, i) => (
                 <button
                   key={i}
                   onClick={() => {
                     setActiveTab(i);
                   }}
-                  className={`px-5px text-white text-15px font-light border-solid border-b-2 ${
+                  className={`px-5px text-white text-15px font-light border-solid border-b-2 whitespace-nowrap ${
                     activeTab === i
                       ? "border-b-warning-100"
                       : "border-b-transparent"

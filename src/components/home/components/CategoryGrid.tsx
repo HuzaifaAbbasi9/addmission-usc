@@ -11,11 +11,12 @@ interface CategoryGridProps {
   headingFont?: string;
   hasContainer?: boolean;
   textHeight?: string;
+  sectionPadding?: string;
 }
 
-const CategoryGrid: React.FC<CategoryGridProps> = ({ cards, headingFont="lg:text-32px max-lg:text-28px", hasContainer=true, textHeight="min-h-115px" }) => {
+const CategoryGrid: React.FC<CategoryGridProps> = ({ cards, headingFont="lg:text-32px max-lg:text-28px", hasContainer=true, textHeight="min-h-115px", sectionPadding }) => {
   return (
-    <section className={`grid lg:grid-cols-3 mm-sm-lg:grid-cols-2 lg:gap-8 max-lg:gap-5 ${hasContainer ? "custom-container" : ""}`}>
+    <section className={`grid lg:grid-cols-3 mm-sm-lg:grid-cols-2 lg:gap-8 max-lg:gap-5 ${hasContainer ? "custom-container" : ""} ${sectionPadding}`}>
       {cards.map((item, i) => (
         <div key={i} className="w-full lg:rounded-50px max-lg:rounded-30px overflow-hidden relative group cursor-pointer">
           <img

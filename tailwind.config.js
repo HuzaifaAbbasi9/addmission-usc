@@ -201,7 +201,7 @@ module.exports = {
     function ({ addUtilities }) {
       const newUtilities = {
         ".text-stroke": {
-          "-webkit-text-stroke-width": "1px",
+          "-webkit-text-strokeWidth": "1px",
           "-webkit-text-stroke-color": "#000",
         },
       };

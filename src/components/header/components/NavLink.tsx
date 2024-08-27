@@ -5,10 +5,10 @@ interface NavLinkProps {
     className: string;
   }
 
-const NavLink = ({ children, to, className }: NavLinkProps) => {
+const NavbarLink = ({ children, to, className }: NavLinkProps) => {
   return (
     <Link to={to} className={className}>{children}</Link>
   )
 }
 
-export { NavLink }
+export { NavbarLink }
