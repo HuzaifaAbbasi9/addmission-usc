@@ -1,3 +1,5 @@
 export * from './components/HeroHeader'
 export * from './components/CourseExploration'
 export * from './components/AdmissionsSupport'
+export * from './components/FeatureGrid'
+export * from './components/CategoryGrid'

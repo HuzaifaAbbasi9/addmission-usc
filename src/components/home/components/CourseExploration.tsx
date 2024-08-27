@@ -1,4 +1,5 @@
 import { textData } from "../../../data/data";
+import { CategoryGrid } from "./CategoryGrid";
 
 const CourseExploration = () => {
   return (
@@ -67,21 +68,7 @@ const CourseExploration = () => {
             </div>
           ))}
         </div>
-        <div className="lg:py-50px max-lg:py-30px grid lg:grid-cols-3 mm-sm-lg:grid-cols-2 lg:gap-8 max-lg:gap-5">
-          {textData.admissionDetails.map((item, i) => (
-            <div key={i} className="w-full rounded-3xl overflow-hidden relative">
-              <img
-                src={item.imgSrc}
-                className="w-full object-cover"
-                alt=""
-              />
-              <div className="min-h-115px absolute bottom-4 left-0 px-6">
-              <h4 className="lg:text-32px max-lg:text-28px font-extrabold text-secondary-100">{item.title}</h4>
-              <p className="text-15px text-secondary-100 ">{item.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+        <CategoryGrid cards={textData.admissionDetails} />
       </div>
     </section>
   );
