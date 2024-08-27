@@ -7,10 +7,10 @@ const CourseExploration = () => {
       <div className="custom-container relative z-1 min-h-[200vh]">
         <div className="relative -top-12">
           <div className="flex items-end">
-            <div className="max-w-[44%] w-full rounded-3xl overflow-hidden relative lg:mr-5">
+            <div className="max-w-[44%] w-full relative lg:rounded-50px max-lg:rounded-30px group overflow-hidden cursor-pointer lg:mr-5">
               <img
                 src="/course-exploration-card-1.png"
-                className="w-full object-cover"
+                className="w-full object-cover transition-transform duration-300 group-hover:scale-105"
                 alt=""
               />
               <h4 className="absolute bottom-7 left-9 lg:text-40px max-lg:text-30px font-bold text-secondary-100">
@@ -18,7 +18,7 @@ const CourseExploration = () => {
               </h4>
             </div>
             <div className="flex lg:pb-5">
-              <div className="space-y-6 flex flex-col w-full max-w-[60%]">
+              <div className="space-y-6 flex flex-col w-full max-w-[60%] cursor-pointer">
                 <img
                   src="/course-exploration-card-2.png"
                   className="w-full object-cover flex-1"
@@ -31,7 +31,7 @@ const CourseExploration = () => {
                   </span>
                 </h3>
               </div>
-              <div className="space-y-6 flex flex-col flex-1 lg:ml-3">
+              <div className="space-y-6 flex flex-col flex-1 lg:ml-3 cursor-pointer">
                 <div className="px-4 py-37px h-full flex flex-col items-center bg-dark-100 text-secondary-100 flex-1">
                   <h4 className="lg:text-64px max-lg:text-40px font-primary leading-none">
                     OPPORTUNITY
@@ -42,7 +42,6 @@ const CourseExploration = () => {
                     vision a reality!
                   </p>
                 </div>
-                {/* <img src="/course-exploration-card-3.svg" className="w-full object-cover max-h-[14.663rem]" alt="" /> */}
                 <h3 className="text-sm text-center font-light text-secondary-100">
                   Advertisement.
                   <span className="text-warning-100 cursor-pointer">

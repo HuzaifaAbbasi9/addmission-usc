@@ -10,11 +10,12 @@ interface Card {
 interface CategoryGridProps {
   cards: Card[];
   hasBg?: boolean;
+  sectionPadding?: string;
 }
 
-const FeatureGrid: React.FC<CategoryGridProps> = ({ cards, hasBg = true }) => {
+const FeatureGrid: React.FC<CategoryGridProps> = ({ cards, hasBg = true, sectionPadding="lg:py-20 max-lg:py-8" }) => {
   return (
-    <section className="custom-container lg:py-20 max-lg:py-8 relative">
+    <section className={`custom-container relative ${sectionPadding}`}>
       <div className="grid grid-cols-2 gap-5 relative z-[1]">
         {cards.map((card, index) => (
           <FeatureCard

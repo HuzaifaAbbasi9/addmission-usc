@@ -67,5 +67,33 @@ export const textData = {
       {image:"/category-card-img-1.png", title:"Short Courses"},
       {image:"/category-card-img-2.png", title:"Coaching Academy"},
       {image:"/category-card-img-3.png", title:"Test & Interview Preparation"},
-    ]
+    ],
+    accommodationOptions: [
+      {
+        backgroundImage: "/img-1.jpeg",
+        title: "Hostels",
+        subtitle: "(Find Nearest Hostels)"
+      },
+      {
+        backgroundImage: "/img-2.jpeg",
+        title: "Room’s Sharing",
+        subtitle: "(Find your room-mate)"
+      }
+    ],
+    partnersCards: [
+      {
+        image: "/partners-img-1.png",
+        title: "Institutions",
+        description: "( University, Institute, College , School, Academy ) Apply for Partner here"
+      },
+      {
+        image: "/partners-img-2.png",
+        title: "Jobs and Internships",
+        description: "Be a partner for Jobs and Internships"
+      },
+      {
+        image: "/partners-img-3.png",
+        title: "Startups & Grants Opportunity",
+      }
+    ],
   };
