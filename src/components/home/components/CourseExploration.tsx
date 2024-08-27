@@ -67,7 +67,7 @@ const CourseExploration = () => {
             </div>
           ))}
         </div>
-        <CategoryGrid cards={textData.admissionDetails} hasContainer={false} />
+        <CategoryGrid cards={textData.admissionDetails} hasContainer={false} sectionPadding="lg:pb-80px" />
       </div>
     </section>
   );
