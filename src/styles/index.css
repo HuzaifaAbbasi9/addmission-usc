@@ -24,6 +24,7 @@
   --success-100: 232, 246, 241;
 
   --body-font: "Inter", sans-serif;
+  --font-primary: "Just Another Hand", cursive;
 }
 
 @layer components {

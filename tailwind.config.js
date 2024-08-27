@@ -4,10 +4,10 @@ const rootFontSize = 16; // 1rem = 16px
 
 const convertPxToRem = (px) => `${px / rootFontSize}rem`;
 
-const generateValues = (max, unit = 'rem') => {
+const generateValues = (max, unit = "rem") => {
   const values = {};
   for (let i = 1; i <= max; i++) {
-    if (unit === 'rem') {
+    if (unit === "rem") {
       values[`${i}px`] = convertPxToRem(i);
     } else {
       values[`${i}${unit}`] = `${i}${unit}`;
@@ -24,13 +24,15 @@ const colorWithOpacity = (variable) => {
 };
 
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      
+      textStrokeWidth: {
+        1: "1px",
+      },
+      textStrokeColor: {
+        black: "rgba(0,0,0,0.21)",
+      },
       colors: {
         dark: {
           100: colorWithOpacity("dark-100"),
@@ -136,7 +138,7 @@ module.exports = {
         "4xl": "2rem",
         ...generateValues(800),
       },
-      flexGrow: generateValues(9, ''),
+      flexGrow: generateValues(9, ""),
       screens: {
         xs: { min: "450px" },
         xl: { min: "1374px" },
@@ -169,7 +171,7 @@ module.exports = {
         ...generateValues(300),
       },
       inset: generateValues(800),
-      textOpacity: generateValues(100, ''),
+      textOpacity: generateValues(100, ""),
       letterSpacing: generateValues(40),
       aspectRatio: {
         ...generateValues(20),
@@ -195,5 +197,16 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".text-stroke": {
+          "-webkit-text-stroke-width": "1px",
+          "-webkit-text-stroke-color": "#000",
+        },
+      };
+
+      addUtilities(newUtilities);
+    },
+  ],
 };
