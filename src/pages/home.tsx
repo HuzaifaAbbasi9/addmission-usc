@@ -1,4 +1,4 @@
-import { CourseExploration, HeroHeader } from "../components/home";
+import { AdmissionsSupport, CourseExploration, HeroHeader } from "../components/home";
 import { MainLayout } from "../layouts";
 
 const Home = () => {
@@ -6,6 +6,7 @@ const Home = () => {
     <MainLayout>
       <HeroHeader />
       <CourseExploration />
+      <AdmissionsSupport />
     </MainLayout>
   );
 };
