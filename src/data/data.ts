@@ -96,4 +96,24 @@ export const textData = {
         title: "Startups & Grants Opportunity",
       }
     ],
+    eventItems: [
+      {
+        imageSrc: "/event-img-3.jpeg",
+        description: "In March 2023, CISCO BRAINS Institute Peshawar, in collaboration with Admissionsuc, held an event with the Chairman of HEC as the chief guest, along with the CISCO Country Director and the Rector of BRAINS.",
+        buttonText: "Read More",
+        buttonLink: "#"
+      },
+      {
+        imageSrc: "/event-img-2.jpeg",
+        description: "In 2018-19, AUSC sent 70 students in the first round and 100 students in the second round on scholarships for MS programs to Sichuan University of Science and Technology in China.",
+        buttonText: "Read More",
+        buttonLink: "#"
+      },
+      {
+        imageSrc: "/event-img-1.jpeg",
+        description: "In May 2024, the Department of Management Sciences at COMSATS University Islamabad, Attock Campus, hosted an event for startups.",
+        buttonText: "Read More",
+        buttonLink: "#"
+      }
+    ]
   };
